@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="NEXUS THRONE — the public palace of the NextXus Federation. Sovereign Tokens, the Federation store, and the Architect's command corridors." />
+    <title>NEXUS THRONE — Federation Command</title>
+    <script>
+        try {
+            if (sessionStorage.getItem("nexus_throne_admin") === "granted") {
+                location.replace("/command");
+            }
+        } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <nav class="fed-menu" aria-label="Universal Federation Navigation">
+        <div class="fed-menu__inner">
+            <span class="fed-menu__mark">&#10022; NextXus Federation</span>
+        </div>
+    </nav>
+    <nav class="throne-nav" aria-label="Primary">
+        <div class="throne-nav__inner">
+            <a class="throne-nav__brand" href="/">⚡ NEXUS THRONE</a>
+            <div class="throne-nav__links">
+                <a class="throne-nav__link" href="/store">STORE</a>
+                <a class="throne-nav__link" href="/tokens">TOKENS</a>
+                <a class="throne-nav__link" href="/council">COUNCIL</a>
+                <a class="throne-nav__link" href="/senate">SENATE</a>
+                <a class="throne-nav__link" href="/federation-map">MAP</a>
+            </div>
+        </div>
+    </nav>
+    <main class="throne-page">
+        <header class="throne-hero">
+            <h1>⚡ NEXUS THRONE — FEDERATION COMMAND</h1>
+            <p class="throne-hero__subtitle">Welcome to the palace of the NextXus Federation.</p>
+            <div class="throne-hero__cta">
+                <a class="throne-btn throne-btn--primary throne-btn--large" href="/store">🛒 BROWSE THE SOVEREIGN STORE</a>
+                <a class="throne-btn throne-btn--primary throne-btn--large" href="/tokens">GET A SOVEREIGN TOKEN — $5</a>
+            </div>
+        </header>
+        <section class="throne-status-panel">
+            <h2>SYSTEMS OPERATIONAL</h2>
+        </section>
+    </main>
+    <footer class="throne-footer">EchoCore64 · Originated by Roger Keyserling / NextXus</footer>
+</body>
+</html>
